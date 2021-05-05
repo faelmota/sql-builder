@@ -46,6 +46,7 @@ type
             function join(table, ref1, exp, ref2: string) : TSQLBuilder; overload;
             function join(table, ref1, ref2: string) : TSQLBuilder; overload;
             function join(table, condition: string) : TSQLBuilder; overload;
+            function leftJoin(table, condition: string) : TSQLBuilder; overload;
             function whereIn(field: string; list: TList<Currency>) : TSQLBuilder;
             function whereNotIn(field: string; list: TList<Currency>) : TSQLBuilder;
             function first(rows : integer) : TSQLBuilder;
